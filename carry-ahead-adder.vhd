@@ -1,3 +1,5 @@
+-- El nombre del archivo y de la entidad deben ser iguales
+
 -- Importacion de librerias
 library ieee;
 use ieee.std_logic_1164.all;

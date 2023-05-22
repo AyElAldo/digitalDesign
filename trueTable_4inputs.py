@@ -1,6 +1,6 @@
 # TABLA DE VERDAD PARA EXPRESIONES DE MAX 4 ENTRADAS
 
-# Cambiar las variables expresion_1 y expresio_2 con tus expresiones o funciones booleanas
+# Cambiar las variables expresion_1 y expresion_2 con tus expresiones o funciones booleanas
 
 def nand(a,b):
     return not(a and b)
@@ -39,12 +39,14 @@ for i in range(16):
     
     # ---------------------------------- Original ------------------------------------
     # Escribe la expresion original:
-    expresion_1 = ((a or b) and not (a or b)) or (((a and not c and d) or not (a or b)) and not (a or b))
+    # EJEMPLO:
+    # expresion_1 = ((a or b) and not (a or b)) or (((a and not c and d) or not (a or b)) and not (a or b))
     expresion_1 = (not((not(a or b)) and (not c or not d))) or ((not c or not d) and (a or b))
     # ----------------------------------------------------------------------------------    
     # ---------------------------------- Convertida ------------------------------------
     # Escribe la expresion equivalente:    
-    expresion_2 = not a and not b
+    # EJEMPLO:
+    # expresion_2 = not a and not b
     expresion_2 = not(nor(not(nor(not(nor(a,b)), nor(not c, not d))), nor(nor(not c, not d), nor(a,b))))
     
     # -----------------------------------------------------------------------------------

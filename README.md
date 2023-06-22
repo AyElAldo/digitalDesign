@@ -12,3 +12,6 @@ Hasta el momento el repositorio cuenta con los siguientes programas:
 
 - [Sumador con acarreo anticipado](carry-ahead-adder/) : **(DE10-Lite - FPGA)**
 Es un sumador hecho en ***VHDL***. Consta de 2 entradas en BCD de 4 bits y una entrada para el acarreo. La salida también es en BCD de *5 bits* y vectores de *7 bits* para representar la suma en *displays de 7 segmentos*.
+
+- [Simon Dice](SD/) : **(NO TERMINADO)**
+Simula el juego Simon Dice usando 12 botones.
